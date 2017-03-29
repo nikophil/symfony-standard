@@ -4,6 +4,7 @@ parameters:
     #parameter_name: value
 
 services:
-    #service_name:
-    #    class: AppBundle\Directory\ClassName
-    #    arguments: ['@another_service_name', 'plain_value', '%parameter_name%']
+    app.super_admin_matcher:
+        class: AppBundle\Profiler\SuperAdminMatcher
+        arguments: ['@security.authorization_checker']
+        public: false

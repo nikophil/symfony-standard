@@ -33,6 +33,9 @@ framework:
     assets: ~
     php_errors:
         log: true
+    profiler:
+        matcher:
+            service: app.super_admin_matcher
 
 # Twig Configuration
 twig:
